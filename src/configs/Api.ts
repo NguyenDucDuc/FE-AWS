@@ -118,7 +118,7 @@ export const endpoint = {
 
 export const AuthApi = () => {
   return axios.create({
-    baseURL: 'http://localhost:5000/',
+    baseURL: 'http://18.141.188.225:5000/',
     headers: {
       authorization: `Bearer ${localStorage.getItem('accessToken')}`,
     },
@@ -127,7 +127,7 @@ export const AuthApi = () => {
 
 export const AuthAdminApi = () => {
   return axios.create({
-    baseURL: 'http://localhost:5000',
+    baseURL: 'http://18.141.188.225:5000',
     headers: {
       authorization: `Bearer ${localStorage.getItem('accessTokenAdmin')}`,
     },
@@ -135,5 +135,5 @@ export const AuthAdminApi = () => {
 };
 
 export default axios.create({
-  baseURL: 'http://localhost:5000/',
+  baseURL: 'http://18.141.188.225:5000/',
 });

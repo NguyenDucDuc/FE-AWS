@@ -51,7 +51,7 @@ import { ResetPassword } from "./components/reset-password/reset-password.compon
 import ProductAdmin from "./components/admin/product/productAdmin.component";
 import { UserManager } from "./components/admin/user-manager/user-manager.component";
 
-export const socket = io("http://localhost:5000");
+export const socket = io("http://18.141.188.225:5000");
 
 function App() {
   useEffect(() => {
